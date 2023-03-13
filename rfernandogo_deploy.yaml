@@ -1,0 +1,23 @@
+# Simple deployment used to deploy and manage the app in rfernandohub/ob:second
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-deploy
+  labels:
+    app: web
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec: 
+      containers:
+      - name: rfernando-pod
+        image: rfernandohub/ob:linode
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
