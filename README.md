@@ -152,12 +152,10 @@ helm install prometheus prometheus-community/prometheus
 kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-ext
 ```
 
-helm repo add grafana https://grafana.github.io/helm-charts
-
-helm repo update
-
 5. Install Grafna
 ```console
+helm repo add grafana https://grafana.github.io/helm-charts
+helm repo update
 helm install grafana grafana/grafana
 ```
 
@@ -176,14 +174,15 @@ echo "YWRtaW4=" | openssl base64 -d ; echo
 echo "{password_string}" | openssl base64 -d ; echo
 ```
 
-
+7. Expose Grafana server as a NodePort to the public
+```console
 kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-ext
-roshan@acer-pop-os:~$ kubectl get svc
+```
 
-Normal Prometheus
+Normal Prometheus Dashboard:
 http://172.104.128.242:31161/graph?g0.expr=node_memory_Active_bytes&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h
 
-Grafna
+Grafna Dashboard:
 http://172.104.128.242:30276/d/k8s_views_ns/kubernetes-views-namespaces?orgId=1&refresh=30s
 
 
