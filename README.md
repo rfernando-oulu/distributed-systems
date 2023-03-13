@@ -5,14 +5,15 @@
 
 3. Command to build the docker image. Make sure you are in the same folder/directory of the files
 ```console
-docker image build -t rfernandohub/ob:second .
+docker image build -t rfernandohub/ob:{tag_name} .
 ```
 
 3. Push your docker image. You need to have an account in https://hub.docker.com/
 ```console
-docker image push rfernandohub/ob:second
+docker image push rfernandohub/ob:{tag_name}
 ```
 
+You can use the docker image I have created for your deployments: https://hub.docker.com/repository/docker/rfernandohub/ob/general
 
 ## Configure Kubernetes Cluster
 
