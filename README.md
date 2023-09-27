@@ -1,3 +1,31 @@
+---
+# Distributed System: Bridging eCommerce Giants to Merchants 🌐
+
+Welcome to Distributed System! 🎉
+
+Distributed System is an innovative Free Open Source project designed to seamlessly integrate the vast ecosystems of Amazon and eBay with online merchant platforms. This pioneering RESTful API allows merchants to effortlessly manage orders from these prominent sales channels and synchronize product uploads, opening up new horizons in e-commerce connectivity.
+
+Dive into a robust and scalable architecture that embraces modern technology stack, deploying microservices in a distributed environment orchestrated by Kubernetes and balanced by NGINX. Each component is meticulously containerized using Docker, ensuring isolated, consistent, and efficient environments for each service.
+
+🚀 **Features:**
+- **Multi-Platform Integration:** Connects Amazon and eBay with online merchant websites to manage orders and upload products.
+- **Microservices Architecture:** Ensures modularity, scalability, and maintainability of the application.
+- **Distributed Deployment:** Utilizes NGINX load balancer for optimal distribution of network or application traffic across multiple servers.
+- **Containerization:** Leverages Docker for encapsulating the application and its dependencies into a single object.
+- **Orchestration:** Managed through Kubernetes, enabling automated deployment, scaling, and management of containerized applications.
+- **Messaging System:** Implements Apache Kafka for building real-time data pipelines and streaming apps.
+- **Cloud Compatibility:** Tested on Linode and DigitalOcean Kubernetes clusters and has plans for testing on Azure, GCP, and AWS to ensure broad applicability and versatility.
+
+🔬 **Testing Environments:**
+- Linode Kubernetes Clusters
+- DigitalOcean Kubernetes Clusters
+- *Upcoming:* Azure, GCP, AWS
+
+Whether you are an e-commerce enthusiast, a developer with a penchant for distributed systems, or simply curious about integrating diverse e-commerce platforms, Distributed System invites you to explore, contribute, and innovate in the world of e-commerce connectivity. Let's build a more connected, efficient, and versatile e-commerce ecosystem together! 🌟
+
+Stay tuned and feel free to dive into the code, raise issues, submit features, and be a part of this exciting journey in reshaping the e-commerce landscape!
+---
+
 ## Overview
 
 ## Prepare Docker containers and upload it on DockerHub
